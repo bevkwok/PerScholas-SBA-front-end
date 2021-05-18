@@ -23,7 +23,8 @@
             <form action="add.html" method="post" name="addPetForm" onsubmit="return addPet();">
                 <p>Pet Name:</p>
                 <label>
-                    Name:<input type="text" name="name" id="name">
+                    <i>(letters and numbers only, no punctuation or special characters)</i><br>
+                    Name:<input type="text" name="name" id="name" pattern="[A-Za-z0-9]+">
                 </label>
                 <p>Select pet gender:</p>
                 <select name="gender" id="gender">
