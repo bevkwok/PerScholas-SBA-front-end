@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <a href="./index.html">HOME</a>
+                <a href="./dogList.html">DOGS</a>
+                <a href="./catList.html">CATS</a>
+            </div>
+            <button class="btn">
+                <a href="./login.html">LOGIN</a>
+            </button>
+        </div>
+        <div class="content">
+            <p class="toggleMessage">Click this message to display our dog table</p>
+            <div class="hide" id="toggleElement">
+                <table class="hide" id="dogTable">
+
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <script>
+        let table2 = document.getElementById("dogTable");
+        let data2 = Object.keys(dogList[0]);
+        makeTableHead(table2, data2);
+        makeTable(table2, dogList);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const messageToggle = document.querySelector('.toggleMessage');
+        const elementToToggle = document.getElementById('toggleElement');    
+        
+        messageToggle.addEventListener('mousedown', () => {
+        elementToToggle.classList.toggle('hide');
+        messageToggle.classList.toggle('hide');
+        });
+    });
+    </script>
+</body>
+</html>

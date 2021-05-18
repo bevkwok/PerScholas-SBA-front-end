@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <a href="./index.html">HOME</a>
+                <a href="./dogList.html">DOGS</a>
+                <a href="./catList.html">CATS</a>
+            </div>
+            <button class="btn">
+                <a href="./login.html">LOGIN</a>
+            </button>
+        </div>
+        <div class="content">
+            <form action="add.html" method="post" name="addPetForm" onsubmit="return addPet();">
+                <p>Pet Name:</p>
+                <label>
+                    Name:<input type="text" name="name" id="name">
+                </label>
+                <p>Select pet gender:</p>
+                <select name="gender" id="gender">
+                    <option value="girl">Girl</option>
+                    <option value="boy">Boy</option>
+                    <option value="notToSay">Prefer not to say</option>
+                </select>
+                <p>Select pet type:</p>
+                <label>
+                Cat<input type="radio" name="type" value="cat" id="cat"> 
+                </label>
+                <label>
+                Dog<input type="radio" name="type" value="dog" id="dog">
+                </label>
+                <input type="submit" class="btn" value="ADD MY PET">
+            </form>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+
+</body>
+</html>
