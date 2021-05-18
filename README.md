@@ -2,7 +2,7 @@
 SBA - HTML/CSS/JavaScript
 
 ### HTML requirements
-* Contains 3 pages total
+* Contains 5 pages total
 * Including a dog list table and cat list table under Dogs and Cats tap
 * Implement from in log in page and add pet page
 * Contains text, images for background and a cute dog gif in log in page
